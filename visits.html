@@ -244,12 +244,12 @@
             },
             // Ajoutez plus de monuments ici
             "monument3": {
-                images: ["img\IMG_5511.JPG", "img\IMG_5512.JPG","img\IMG_5513.JPG", "img\IMG_5514.JPG","img\IMG_5515.JPG"],
-                tab1Content: "<h3>Description</h3><p>bah en gros c'est un park</p>",
-                tab2Content: "<h3>Our review</h3><p>lots of animals, that was cool</p>"
+                images: ["img\IMG_5511.JPG", "img\IMG_5511.JPG","img\IMG_5511.JPG", "img\IMG_5511.JPG","img\IMG_5511.JPG"],
+                tab1Content: "<h3>Description</h3><p>Stephen's Green, also known as St. Stephen's Green, is a large public park located in the heart of Dublin, Ireland. Established in 1664, it spans 22 acres and is surrounded by Georgian architecture. The park features beautifully manicured gardens, a picturesque lake, fountains, and numerous statues, making it a popular spot for both locals and tourists. Its central location near Grafton Street and its serene environment provide a perfect escape from the bustling city. Additionally, Stephen's Green plays host to various events and is a key cultural and historical landmark in Dublin.</p>",
+                tab2Content: "<h3>Our review</h3><p>On the day of our arrival, we stumbled upon it by chance while trying to get to the city center. This park is typical of the green spaces found in Dublin and is similar to the gardens you can find in London. It's a peaceful place located in a pleasant neighborhood. Numerous fountains and green areas make walking through it enjoyable. For dining, this place is an excellent alternative to a restaurant terrace. There we saw a lot of animals, like cygnets and squirels</p>"
             },
             "monument4": {
-                images: ["img\IMG_5546.JPG", "img\IMG_5549.JPG","img\IMG_5551.JPG", "img\IMG_5561.JPG","img\IMG_5568.JPG"],
+                images: ["img/IMG_5546.JPG", "img/IMG_5549.JPG","img/IMG_5551.JPG", "img/IMG_5561.JPG","img/IMG_5568.JPG"],
                 tab1Content: "<h3>History</h3><p>Trinity College Dublin, founded in 1592 by Queen Elizabeth I, is Ireland's oldest university. It was established to consolidate the Tudor monarchy's influence in Ireland and provide a Protestant education. Initially intended for the sons of the Anglo-Irish gentry, it evolved to admit Catholics and women over the centuries, reflecting broader societal changes. The college's historic campus in the heart of Dublin houses architectural landmarks such as the Old Library, home to the Book of Kells, a 9th-century illuminated manuscript. Trinity College has a distinguished reputation for academic excellence and has produced many notable alumni, including writers like Jonathan Swift and Samuel Beckett, political figures such as Mary Robinson, and scientists like William Rowan Hamilton. Today, it is a leading research university, attracting students from around the world.</p>",
                 tab2Content: "<h3>Our review</h3><p>The site is large, but the visit is short for a relatively high price of 19 euros. When we visited, the grand library was under renovation, and most of the books had been moved. However, the tour is very interesting, made simple and understandable thanks to a free audio guide. We were able to see the Book of Kells and other renowned items such as the Nobel Prize medal and Viking artifacts.After the visit, you can stroll through the park and explore the gardens. This place is very touristy and, unfortunately, somewhat a victim of its own success.</p>"
             },
@@ -380,19 +380,19 @@
     <h1>Visits</h1>
     <div class="grid-container">
         <div class="grid-item" data-monument="monument1" onclick="openModal('monument1')">
-            <img src="img\IMG_5539.JPG" alt="Monument 1">
+            <img src="img/IMG_5539.JPG" alt="Monument 1">
             <div class="caption">Monument 1</div>
         </div>
         <div class="grid-item" data-monument="monument2" onclick="openModal('monument2')">
-            <img src="img\IMG_5546.JPG" alt="Monument 2">
+            <img src="img/IMG_5546.JPG" alt="Monument 2">
             <div class="caption">Monument 2</div>
         </div>
         <div class="grid-item" data-monument="monument3" onclick="openModal('monument3')">
-            <img src="img\IMG_5511.JPG" alt="Monument 3">
-            <div class="caption">Monument 3</div>
+            <img src="img/IMG_5511.JPG" alt="Monument 3">
+            <div class="caption">St Sefen's green</div>
         </div>
         <div class="grid-item" data-monument="monument4" onclick="openModal('monument4')">
-            <img src="img\IMG_5546.JPG" alt="Monument 4">
+            <img src="img/IMG_5546.JPG" alt="Monument 4">
             <div class="caption">Trinity College & Old library</div>
         </div>
     </div>
@@ -408,15 +408,15 @@
         </div>
         <div class="tab-container">
             <div class="tab">
-                <button class="tablinks" id="tab1" onclick="openTab(event, 'Tab1')">Tab 1</button>
-                <button class="tablinks" id="tab2" onclick="openTab(event, 'Tab2')">Tab 2</button>
+                <button class="tablinks" id="tab1" onclick="openTab(event, 'Tab1')">History</button>
+                <button class="tablinks" id="tab2" onclick="openTab(event, 'Tab2')">Our feedback</button>
             </div>
             <div id="Tab1" class="tabcontent">
-                <h3>Tab 1</h3>
+                <h3>History</h3>
                 <p>Content for Tab 1.</p>
             </div>
             <div id="Tab2" class="tabcontent">
-                <h3>Tab 2</h3>
+                <h3>our feedback</h3>
                 <p>Content for Tab 2.</p>
             </div>
         </div>

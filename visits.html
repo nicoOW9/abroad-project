@@ -46,8 +46,8 @@
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
         }
         .grid-item {
             position: relative;
@@ -278,6 +278,36 @@
                 tab1Content: "<h3>History</h3><p></p>",
                 tab2Content: "<h3>Our review</h3><p></p>"
             },
+            "monument10": {
+                images: ["img/IMG_6026.JPG", "img/IMG_6028.JPG","img/IMG_6035.JPG", "img/IMG_6051.JPG","img/IMG_6053.JPG","img/IMG_6058.JPG","img/IMG_6070.JPG"],
+                tab1Content: "<h3>History</h3><p></p>",
+                tab2Content: "<h3>Our review</h3><p></p>"
+            },
+            "monument11": {
+                images: ["img/IMG_5940.JPG", "img/IMG_5913.JPG","img/IMG_5892.JPG", "img/IMG_5955.JPG"],
+                tab1Content: "<h3>History</h3><p></p>",
+                tab2Content: "<h3>Our review</h3><p></p>"
+            },
+            "monument12": {
+                images: ["img/IMG_5940.JPG", "img/IMG_5913.JPG","img/IMG_5892.JPG", "img/IMG_5955.JPG"],
+                tab1Content: "<h3>History</h3><p></p>",
+                tab2Content: "<h3>Our review</h3><p></p>"
+            },
+            "monument13": {
+                images: ["img/IMG_6118.JPG", "img/IMG_6117.JPG","img/IMG_6106.JPG", "img/IMG_6112.JPG", "img/IMG_6116.JPG"],
+                tab1Content: "<h3>History</h3><p></p>",
+                tab2Content: "<h3>Our review</h3><p></p>"
+            },
+            "monument14": {
+                images: ["img/IMG_6118.JPG", "img/IMG_6117.JPG","img/IMG_6106.JPG", "img/IMG_6112.JPG", "img/IMG_6116.JPG"],
+                tab1Content: "<h3>History</h3><p></p>",
+                tab2Content: "<h3>Our review</h3><p></p>"
+            },
+            "monument15": {
+                images: ["img/IMG_6118.JPG", "img/IMG_6117.JPG","img/IMG_6106.JPG", "img/IMG_6112.JPG", "img/IMG_6116.JPG"],
+                tab1Content: "<h3>History</h3><p></p>",
+                tab2Content: "<h3>Our review</h3><p></p>"
+            },
             
         };
 
@@ -404,14 +434,14 @@
 <div class="container">
     <h1>Visits</h1>
     <div class="grid-container">
-        <div class="grid-item" data-monument="monument1" onclick="openModal('monument1')">
+        <!--<div class="grid-item" data-monument="monument1" onclick="openModal('monument1')">
             <img src="img/IMG_5539.JPG" alt="Monument 1">
             <div class="caption">Monument 1</div>
         </div>
         <div class="grid-item" data-monument="monument2" onclick="openModal('monument2')">
             <img src="img/IMG_5546.JPG" alt="Monument 2">
             <div class="caption">Monument 2</div>
-        </div>
+        </div>-->
         <div class="grid-item" data-monument="monument3" onclick="openModal('monument3')">
             <img src="img/IMG_5511.JPG" alt="Monument 3">
             <div class="caption">St Sefen's green</div>
@@ -439,6 +469,30 @@
         <div class="grid-item" data-monument="monument9" onclick="openModal('monument9')">
             <img src="img/IMG_5940.JPG" alt="Monument 9">
             <div class="caption">Dublina / Viking Museum</div>
+        </div>
+        <div class="grid-item" data-monument="monument10" onclick="openModal('monument10')">
+            <img src="img/IMG_6026.JPG" alt="Monument 10">
+            <div class="caption"> National Gallery of Ireland</div>
+        </div>
+        <div class="grid-item" data-monument="monument11" onclick="openModal('monument11')">
+            <img src="img/IMG_5940.JPG" alt="Monument 11">
+            <div class="caption"> Temple bar</div>
+        </div>
+        <div class="grid-item" data-monument="monument12" onclick="openModal('monument12')">
+            <img src="img/IMG_5940.JPG" alt="Monument 12">
+            <div class="caption"> Dublin Center</div>
+        </div>
+        <div class="grid-item" data-monument="monument13" onclick="openModal('monument13')">
+            <img src="img/IMG_6118.JPG" alt="Monument 13">
+            <div class="caption"> Santry park</div>
+        </div>
+        <div class="grid-item" data-monument="monument14" onclick="openModal('monument14')">
+            <img src="img/IMG_6118.JPG" alt="Monument 14">
+            <div class="caption"> Famine memorial</div>
+        </div>
+        <div class="grid-item" data-monument="monument15" onclick="openModal('monument15')">
+            <img src="img/IMG_6118.JPG" alt="Monument 15">
+            <div class="caption">St patrick cathedral</div>
         </div>
     </div>
 </div>

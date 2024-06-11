@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- indique que le fichier est une page Web HTML, le navigateur interpretera le fichier selon le doctype -->
+<html id="html1"> <!--balise qui indique le debut du code en html-->
+	<head>	<!-- section indiquant les informations d'en tête, ici le type d'encodage utilisé et lien reliant la feuille de style css -->	
+             <meta charset="utf-8"/>	
+             <link rel="stylesheet" href="css/index.css"/>
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+	</head><!-- les balises fermantes sont toutes faites sur ce format "</>" et indiquent la fin de la section -->
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="visits.html">Visits</a>
+    <a href="ourtrip.html">Our Trip</a>
+    <a href="share.html">Share</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<div id="titrediv">
+  <h1>Dublin</h1>
+  <h2 id="titre2">What to visit ?</h2>
+</div>
+
+<!-- image slider début-->
+<div class="slider" >
+  <div class="slides">
+    <!--bouton slider-->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <!--fin boutons-->
+    <!--image slide début-->
+    <div class="slide first">
+      <img src="img\IMG_5551.JPG" alt="">
+    </div>
+    <div class="slide">
+      <img src="img\IMG_5551.JPG" alt="">
+    </div>
+    <div class="slide">
+      <img src="img\IMG_5551.JPG" alt="" >
+    </div>
+    <div class="slide">
+      <img src="img\IMG_5551.JPG" alt="">
+    </div>
+    <!--fin boutons-->
+    <!--début nav auto-->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    <!--fin nav auto-->
+  </div>
+  <!--manual nav start-->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <!--manual nav end-->
+</div>
+<script type="text/javascript">
+  var counter = 2;
+  setInterval(function(){
+    document.getElementById(`radio` + counter).checked = true;
+    counter++
+    if(counter >4){
+      counter = 1;
+    }
+  },5000);
+</script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+</body>
+</html>

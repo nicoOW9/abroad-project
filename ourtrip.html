@@ -1,12 +1,33 @@
 <!DOCTYPE html> <!-- indique que le fichier est une page Web HTML, le navigateur interpretera le fichier selon le doctype -->
 <html id="html1"> <!--balise qui indique le debut du code en html-->
-	<head>	<!-- section indiquant les informations d'en tête, ici le type d'encodage utilisé et lien reliant la feuille de style css -->	
-             <meta charset="utf-8"/>	
-             <link rel="stylesheet" href="css/index.css"/>
-             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
-
-	</head><!-- les balises fermantes sont toutes faites sur ce format "</>" et indiquent la fin de la section -->
+<head> <!-- section indiquant les informations d'en tête, ici le type d'encodage utilisé et lien reliant la feuille de style css -->	
+  <meta charset="utf-8"/>	
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <style>
+    .video-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .video-section .text {
+      width: 20%;
+      margin-right: 5%;
+      background-color: #f0f0f0; /* Change this to the desired background color */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .video-section video {
+      width: 75%;
+    }
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head><!-- les balises fermantes sont toutes faites sur ce format "</>" et indiquent la fin de la section -->
 
 <body>
 
@@ -20,24 +41,42 @@
     </a>
   </div>
 
-<div id="titrediv">
-  <h1>Our trip</h1>
-</div>
+  <div id="titrediv">
+    <h1>Our trip</h1>
+  </div>
 
+  <!-- Section for videos and text -->
+  <div class="video-container">
+    <div class="video-section">
+      <div class="text">
+        <p>Text description for the first video. This can include details about the content of the video, background information, or any other relevant context.</p>
+      </div>
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-section">
+      <div class="text">
+        <p>Text description for the second video. Provide information that viewers might find useful or interesting related to the video content.</p>
+      </div>
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
 
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
 </body>
 </html>

@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding:  0;
   height:  100vh;
-  dispaly:  flex;
   justify-content: center;
   align-items: center;
   background: #0D0B13;
@@ -55,7 +54,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -63,7 +62,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: relative;
@@ -71,7 +70,7 @@ body {
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
   }
